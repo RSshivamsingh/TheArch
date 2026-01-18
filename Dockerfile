@@ -8,7 +8,7 @@ WORKDIR /usr/share/nginx/html
 RUN rm -rf ./*
 
 # Step 4: Copy your HTML and CSS files from the current directory to the container
-COPY . .
+COPY index.html
 
 # Step 5: Expose port 80 to the outside world
 EXPOSE 80
